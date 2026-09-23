@@ -13,6 +13,8 @@ function calculateTicketPrice(quantity, basePrice, seatingType) {
     price = price * 1.50;
   }
 
+  price = price - 10;
+  
   return Math.round(price);
 }
 

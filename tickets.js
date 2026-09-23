@@ -5,6 +5,10 @@ function isValidQuantity(quantity) {
 function calculateTicketPrice(quantity, basePrice, seatingType) {
   let price = quantity * basePrice;
 
+  if (quantity >= 5) {
+    price = price * 0.90;
+  }
+
   if (seatingType === "premium") {
     price = price * 1.50;
   }
